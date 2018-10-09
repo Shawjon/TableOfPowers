@@ -26,13 +26,15 @@ namespace TableOfPowers
                     xString = Console.ReadLine();
                     x = int.Parse(xString);
 
-                    Console.WriteLine("Number     Squared      Cubed");
-                    Console.WriteLine("======     =======      =====");
-
+                    /// Console.WriteLine("Number     Squared      Cubed");
+                    /// Console.WriteLine("======     =======      =====");
+                    Console.WriteLine("Number {0,5} Squared {1,5} Cubed {2,5}","","","");
+                    Console.WriteLine("====== {0,5} ======= {1,5} ===== {2,5}", "", "", "");
                     for (int i = 1; i < (x + 1); i++)
                     {
                         
-                        Console.WriteLine(String.Format("  {0,-10}  {1,-10}  {2,-10}", i, (i * i), (i * i * i)));
+                        Console.WriteLine(String.Format("  {0,-10}    {1,-10}   {2,-10}", i, (i * i), (i * i * i)));
+                        ///Console.WriteLine("{0,5}      {1,5}         {2,5}", i, i*i, i*i*i);
                     }
                     Console.WriteLine();
 
